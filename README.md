@@ -1,6 +1,6 @@
 # studetf
 
-Integracija studentskih servisa sa Google Calendar-om.
+Integracija [studentskih servisa](https://student.etf.bg.ac.rs) Elektrotehnickog fakulteta sa Google Calendar-om.
 
 Aplikacija se konektuje na servise, dovlaci listu prijavljenih ispita, i zatim ih smesta u kalendar. Prepoznaju se ime ispita, datum, vreme i mesto odrzavanja. Osvezavanje vec dodati ispita (promena vremena, sale) je automatsko.
 

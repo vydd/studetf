@@ -39,7 +39,7 @@ def fetch_exams(username=config.STUDENT_USERNAME, password=config.STUDENT_PASSWO
     options = Options()
     options.headless = True
     driver = webdriver.Firefox(options=options, executable_path=geckodriver_path)
-    driver.get('http://student.etf.bg.ac.rs')
+    driver.get('https://student.etf.bg.ac.rs')
 
     username_field = driver.find_element_by_id('j_username')
     username_field.send_keys(username)
