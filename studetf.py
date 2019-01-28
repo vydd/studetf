@@ -55,6 +55,8 @@ def fetch_exams(username=config.STUDENT_USERNAME, password=config.STUDENT_PASSWO
     title = [x for x in soup.find_all('h1') if 'Пријављени' in x.text][0]
     table = title.next_element.next_element
 
+    driver.close()
+
     exams = []
     for row in table.findAll('tr'):
         exams.append([x.text for x in row.findAll('td')])
