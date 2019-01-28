@@ -137,7 +137,13 @@ def upsert_event(exam, service, calendar_id=config.CALENDAR_ID):
 
 
 def run():
-    logger.debug(f'Starting with config: STUDENT_USERNAME = {config.STUDENT_USERNAME}, STUDENT_PASSWORD = {config.STUDENT_PASSWORD}, CALENDAR_ID = {config.CALENDAR_ID}, GECKODRIVER_PATH = {config.GECKODRIVER_PATH}, CERTIFICATE_PATH = {config.CERTIFICATE_PATH}, LOGLEVEL = {config.LOGLEVEL}')
+    logger.debug(f'Starting with config: '
+                 f'STUDENT_USERNAME = {config.STUDENT_USERNAME}, '
+                 f'STUDENT_PASSWORD = {config.STUDENT_PASSWORD}, '
+                 f'CALENDAR_ID = {config.CALENDAR_ID}, '
+                 f'GECKODRIVER_PATH = {config.GECKODRIVER_PATH}, '
+                 f'CERTIFICATE_PATH = {config.CERTIFICATE_PATH}, '
+                 f'LOGLEVEL = {config.LOGLEVEL}')
     exams = fetch_exams()
     service = build_service()
     for exam in exams:
