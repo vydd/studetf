@@ -24,6 +24,12 @@ Aplikacija se konektuje na servise, dovlaci listu prijavljenih ispita, i zatim i
 
 `$ ./studetf.py`
 
+## Roadmap
+
+- [x] Integracija kalendara sa prijavljenim ispitima
+- [ ] Ubacivanje termina prijave ispita u kalendar
+- [ ] Podsetnik za placanje rate
+
 ## Licenca
 
 Copyright (c) 2019 Danilo Vidovic (vydd)
