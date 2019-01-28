@@ -129,7 +129,7 @@ def upsert_event(exam, service, calendar_id=config.CALENDAR_ID):
             body=body
         ).execute()
     else:
-        x = service.events().update(
+        service.events().update(
             calendarId=calendar_id,
             eventId=event['id'],
             body=body
