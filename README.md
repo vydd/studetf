@@ -22,11 +22,18 @@ Aplikacija se konektuje na servise, dovlaci listu prijavljenih ispita, i zatim i
 
 ## Koriscenje
 
+### Osvezavanje kalendara
+
 `$ ./studetf.py`
+
+### Popunjavanje anketa
+
+`$ ./anketa.py`
 
 ## Roadmap
 
 - [x] Integracija kalendara sa prijavljenim ispitima
+- [x] Automatsko popunjavanje anketa
 - [ ] Ubacivanje termina prijave ispita u kalendar
 - [ ] Podsetnik za placanje rate
 
