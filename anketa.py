@@ -32,7 +32,10 @@ def find_surveys(driver):
 
 
 def fill_in_survey(driver):
-    driver.find_elements_by_css_selector('select > option')[-1].click()
+    try:
+        driver.find_elements_by_css_selector('select > option')[-1].click()
+    except:
+        pass
     for x in driver.find_elements_by_css_selector('input[type="radio"]'):
         x.click()
     driver.find_element_by_id('main:finish')
@@ -46,7 +49,7 @@ def fill_in_survey(driver):
 
 def go():
     options = Options()
-    options.headless = True
+    #options.headless = True
     driver = webdriver.Firefox(
         options=options,
         executable_path=config.GECKODRIVER_PATH)
